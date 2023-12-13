@@ -18,7 +18,7 @@
 
   <ItemGroup>
     <Reference Include="Aki.Reflection">
-      <HintPath>..\Raid-Overhaul-main\Dependancies\Aki.Reflection.dll</HintPath>
+      <HintPath>..\Dependancies\Aki.Reflection.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\Dependancies\Assembly-CSharp.dll</HintPath>
