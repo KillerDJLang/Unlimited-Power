@@ -10,7 +10,7 @@ namespace Power
     {
         float timer;
         float PowerTimer;
-        float PowerOnTimeRange = Random.Range(60f, 180f);
+        float PowerOnTimeRange = Random.Range(300f, 1800f);
 
         Player player
         { get => gameWorld.MainPlayer; }
