@@ -36,6 +36,7 @@ namespace Power
                 _switchs = FindObjectsOfType<Switch>();
             }
 
+            // Check that switches exist before starting the coroutine
             // Start the script on a seperate thread if there are switches to activate
             // Set the _isRunning flag to true so we dont start multiple instances
             if ( _switchs.Length > 0 )
