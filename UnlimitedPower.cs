@@ -25,7 +25,6 @@ namespace Power
             // We dont want to run if the game world is null or
             // The plugin isnt enabled or
             // The component is actively running or
-            // the length of switches is less than 1 because the array is empty
             if (!Ready() || !Plugin.Enablemod.Value || _isRunning)
             {
                 return;
