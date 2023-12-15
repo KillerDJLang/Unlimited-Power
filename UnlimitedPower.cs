@@ -41,14 +41,14 @@ namespace Power
             // Set the _isRunning flag to true so we dont start multiple instances
             if ( _switchs.Length > 0 )
             {
-                StaticManager.Instance.StartCoroutine(PowerOnRandomDoor());
+                StaticManager.Instance.StartCoroutine(ThrowRandomSwitch());
                 _isRunning = true;
             }
         }
 
         // This is an extremely fancy loop that is very effiecient in terms of cpu time
         // it will run the timer until its ready to move on to the next instruction
-        private IEnumerator PowerOnRandomDoor()
+        private IEnumerator ThrowRandomSwitch()
         {
             // Do nothing until its time to turn on a switch
             // Multiplied by 60f because we convert from minutes to seconds
